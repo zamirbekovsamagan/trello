@@ -34,7 +34,7 @@ function TrelloHeader() {
           <Input placeholder="Поиск" onChange={(event)=>setSearch(event.target.value)} />
           <div><Image src={info} /></div>
           <div><Image src={bell} /></div>
-          <button onClick={()=>navigate('/')}>Выйти</button>
+          <button onClick={()=>navigate('/zamirbekovsamagan')}>Выйти</button>
         </div>
       </Header>
       <TrelloTodos search={search}/>
