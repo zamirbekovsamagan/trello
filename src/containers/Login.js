@@ -27,7 +27,7 @@ function Login() {
   const submitHandler = (event)=>{
     event.preventDefault()
     if(formIsValid){
-      navigate('/trello')
+      navigate('/zamirbekovsamagan/trello')
     }
   }
   return (
