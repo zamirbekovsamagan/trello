@@ -27,7 +27,7 @@ function Login() {
   const submitHandler = (event)=>{
     event.preventDefault()
     if(formIsValid){
-      navigate('/zamirbekovsamagan/trello')
+      navigate('/trello')
     }
   }
   return (
@@ -65,7 +65,7 @@ function Login() {
         </Hr>
         <List>
           <li>Не удается войти?</li>
-          <li onClick={()=> navigate('/signup')}>Зарегистрировать аккаунт</li>
+          <li>Зарегистрировать аккаунт</li>
         </List>
       </Block>
       <List>
