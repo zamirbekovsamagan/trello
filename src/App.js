@@ -11,7 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage/>}/>
           <Route path="/login" exact element={<Login/>}/>
-          <Route path="/trello" element={<Trello/>}/>
+          <Route path="/trellopage" element={<Trello/>}/>
         </Routes>
       </div>
   );
