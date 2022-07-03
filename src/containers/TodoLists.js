@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import InputModal from "../components/UI/InputModal";
+import InputModal from "../components/InputModal";
 import { trelloActions } from "../store/slices/trelloSlice";
 import styled from "styled-components";
 

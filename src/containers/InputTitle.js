@@ -1,8 +1,8 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { Button } from "../components/StyledComponents";
 import { trelloActions } from "../store/slices/trelloSlice";
 import { useState } from "react";
+import styled from "styled-components";
 
 function InputTitle({item}) {
   const dispatch = useDispatch()
@@ -54,3 +54,14 @@ function InputTitle({item}) {
 }
 
 export default InputTitle;
+
+export const Button = styled("button")`
+  width: 150px;
+  height: 40px;
+  border-radius: 3px;
+  float: left;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background-color: #0079bf;
+`;

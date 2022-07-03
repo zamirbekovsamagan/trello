@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { createPortal } from "react-dom";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { trelloActions } from "../../store/slices/trelloSlice";
+import { trelloActions } from "../store/slices/trelloSlice";
 
 function Backdrop({ listId, columnId }) {
   const dispatch = useDispatch();

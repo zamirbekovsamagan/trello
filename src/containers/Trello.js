@@ -3,11 +3,11 @@ import trello from "../assets/trello-logo-white.png";
 import menu from "../assets/menu-logo.png";
 import info from "../assets/info-logo.png";
 import bell from "../assets/bell-logo.png";
-import TrelloTodos from "../containers/TrelloTodos";
+import TrelloTodos from "./TrelloTodos";
 import {useNavigate} from 'react-router-dom'
 import { useState } from "react";
 
-function TrelloHeader() {
+function Trello() {
   const navigate = useNavigate()
   const [search, setSearch] = useState('')
   return (
@@ -39,10 +39,10 @@ function TrelloHeader() {
       </Header>
       <TrelloTodos search={search}/>
     </Block>
-  );
+  )
 }
 
-export default TrelloHeader;
+export default Trello;
 
 const Block = styled("div")`
   width: 100%;

@@ -2,7 +2,8 @@ import React from "react";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { trelloActions } from "../store/slices/trelloSlice";
-import { Button, GrayButton } from "../components/StyledComponents";
+import { GrayButton } from "./ColumnList";
+import { Button } from "./InputTitle";
 import styled from "styled-components";
 
 function Cart(props) {

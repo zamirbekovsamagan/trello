@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import Cart from "./Cart";
-import { GrayButton } from "../components/StyledComponents";
 import { useState } from "react";
 import ColumHeader from "./ColumHeader";
 import InputTitle from "./InputTitle";
@@ -17,7 +16,7 @@ function ColumnList({ item }) {
   return (
     <Column>
       {item.title ? (
-        <div>
+        <div >
           <ColumHeader item={item}/>
           {item.lists.map((el) => {
             return <TodoLists key={el.id} item={item} el={el}/>;
@@ -73,5 +72,19 @@ const Column = styled("div")`
     }
   }
 `;
+
+export const GrayButton = styled('button')`
+width: 240px;
+height: 30px;
+border: none;
+color: #5e6c84;
+border-radius: 3px;
+text-align: left;
+padding-left: 10px;
+cursor: pointer;
+:hover{
+  background-color: #091e4214;
+}
+`
 
 

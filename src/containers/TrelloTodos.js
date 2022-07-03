@@ -18,7 +18,8 @@ function TrelloTodos({search}) {
         }
       }).map((item) => {
         if (item.name === "list") {
-          return <ColumnList key={item.id} item={item}/>
+          return <ColumnList key={item.id} item={item} 
+          />
         } else {
           return <TrelloTodo key={item.id} />;
         }
